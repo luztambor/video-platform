@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import Sidebar from "./Sidebar";
+import { Sidebar, Videos } from "./";
 
 const Feed = () => {
   return (
@@ -27,6 +27,18 @@ const Feed = () => {
         >
           Copyright 2023 luztambor
         </Typography>
+      </Box>
+
+      <Box p={2} sx={{ overflowY: "auto", height: "90hv", flex: 2 }}>
+        <Typography
+          variant="h4"
+          fontWeight="bold"
+          mb={2}
+          sx={{ color: "white" }}
+        >
+          NEW <span style={{ color: "#FC1503" }}>videos</span>
+        </Typography>
+        <Videos videos={[]} />
       </Box>
     </Stack>
   );
