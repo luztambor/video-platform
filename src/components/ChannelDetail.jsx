@@ -10,7 +10,7 @@ const ChannelDetail = () => {
 
   const { id } = useParams();
 
-  console.log(channelDetail, videos);
+  // console.log(channelDetail, videos);
 
   useEffect(() => {
     fetchFromAPI(`channels?part=snippet&id=${id}`).then((data) =>
