@@ -6,7 +6,7 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => (
     direction="row"
     sx={{
       overflowY: "auto",
-      height: { sx: "auto", md: "95%" },
+      height: { sx: "auto", md: "92%" },
       flexDirection: { md: "column" },
       position: "sticky",
       zIndex: 1,

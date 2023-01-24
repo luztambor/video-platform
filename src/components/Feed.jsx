@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import { Sidebar, Videos } from "./";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
+import { Link } from "react-router-dom";
 
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState("New");
@@ -30,16 +31,23 @@ const Feed = () => {
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
-        <Typography
-          className="copyright"
-          variant="body2"
-          sx={{
-            mt: 1.5,
-            color: "#fff",
-          }}
+        <a
+          href="https://www.github.com/luztambor"
+          target="_blank"
+          rel="noreferrer"
         >
-          Copyright 2023 luztambor
-        </Typography>
+          <Typography
+            className="copyright"
+            variant="body2"
+            sx={{
+              mt: 1.5,
+              color: "#fff",
+              opacity: 0.5,
+            }}
+          >
+            github.com/luztambor
+          </Typography>
+        </a>
       </Box>
 
       <Box p={2} sx={{ overflowY: "auto", height: "90hv", flex: 2 }}>
